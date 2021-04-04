@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Post List</title>
+
+    <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="../styles/post.css">
+</head>
+<body>
+<!-- Made By
+ Id = 1811981352
+ Name = Vishwas Sharma
+ For any queries contact me on linkdin = https://www.linkedin.com/in/vishwas-sharma-a54236203/
+ -->
+<!-- Sign up Model -->
+<div class="model_vis">
+    <div  class="model_vis_form">
+        <span class="model_vis_close">&times;</span>
+        <h1>Get Started</h1>
+        <hr>
+
+        <form>
+            <p>Full Name</p>
+            <input type="text" class="vis_Name" placeholder="Enter Full Name" required>
+
+            <p>Username</p>
+            <input type="text" class="Vis_Name" placeholder="Enter Username" required>
+
+            <p>Password</p>
+            <input type="password" class="vis_Pass" placeholder="Enter Password" required>
+
+            <p> Confirm Password</p>
+            <input type="password" class="Vis_Pass" placeholder="Confirm Password" required>
+
+            <input type="submit" class="vis_button" value="Sign up" >
+        </form>
+
+    </div>
+</div>
+
+<!-- Sign in Model -->
+<div class="model_vis_modal">
+    <div class="model_vis_form">
+        <span class="model_vis_close">&times;</span>
+        <h1>Welcome Back!</h1>
+        <hr>
+
+        <form>
+            <p>Username</p>
+            <input type="text" class="vis_Name" placeholder="Enter Username" required>
+
+            <p>Password</p>
+            <input type="password" class="vis_Pass" placeholder="Enter Password" required>
+
+            <input type="submit" class="vis_button" value="Submit">
+
+        </form>
+        <h3 class="vis_member">Not a member?<a class="signup_in_signin"><span> Sign up </span></a></h3>
+
+    </div>
+</div>
+
+<!-- LOGO and header -->
+<div class="header">
+    <button class="vis_topButtons" id="btn">Sign Up</button>
+    <button class="vis_topButtons">Sign In</button>
+    <a  class="vis_logo-title">ScriBBler</a>
+    <p class="vis_middleText">Explore, Imagine, Create</p>
+</div>
+<!-- POST VIEW AREA -->
+<div class="parent_vis_container">
+    <h1 id="container_heading_1">HALO:Reach</h1>
+    <!-- Hidden title for edit -->
+    <textarea type="text" id="container_heading_1_edit"></textarea>
+    <div class="container_name_edit">
+        <p id="name">Cortana</p>
+        <button id="edit" onclick="edit_post()">Edit <img src="https://img.icons8.com/metro/15/ffffff/edit-property.png"/></button>
+        <!-- hidden button for save -->
+        <button id="save" onclick="save_post()">Save <img src="https://img.icons8.com/ios-filled/15/ffffff/save--v1.png"/></button>
+    </div>
+    <p id="post_body">
+
+        Halo: Reach is a 2010 first-person shooter developed by Bungie and published by Microsoft Game Studios, originally for the Xbox 360. The fifth installment in the Halo series and a direct prequel to Halo: Combat Evolved, Reach was released worldwide in September 2010. The game takes place in the year 2552, where humanity is locked in a war with the alien Covenant. Players control Noble Six, a member of an elite supersoldier squad, when the human world known as Reach falls under Covenant attack.
+
+    </p>
+    <!-- hidden body for edit -->
+    <textarea id="post_body_edit"></textarea>
+    <button id="like" onclick="like_post()"><img src="https://img.icons8.com/fluent-systems-filled/20/ffffff/facebook-like.png"/>Like</button>
+    <p id="like_counter">Be first one to like this!</p>
+    <textarea id="comment_add_content" placeholder="leave a comment..."></textarea><br>
+    <button id="comment" onclick="post_comment()">Comment</button>
+    <h3 id="comment_head">ALL Comments</h3>
+    <div id="all_comment">
+
+    </div>
+</div>
+
+<!-- Made By
+ Id = 1811981352
+ Name = Vishwas Sharma
+ For any queries contact me on linkdin = https://www.linkedin.com/in/vishwas-sharma-a54236203/
+ -->
+
+<script src="../scripts/post.js"></script>
+<script src="../scripts/header.js"></script>
+</body>
+</html>
